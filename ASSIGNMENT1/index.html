@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week One Project</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button {
+            display: block;
+            margin: 15px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- h1 with inline CSS -->
+    <h1 style="color: red; text-align: center; font-size: 36px; font-family: 'Verdana';">
+        Heading 1 (Inline CSS)
+    </h1>
+
+    <!-- h2 with internal CSS -->
+    <h2>Heading 2 (Internal CSS)</h2>
+
+    <!-- h3 to h6 with external CSS -->
+    <h3 class="heading3">Heading 3 (External CSS)</h3>
+    <h4 class="heading4">Heading 4 (External CSS)</h4>
+    <h5 class="heading5">Heading 5 (External CSS)</h5>
+    <h6 class="heading6">Heading 6 (External CSS)</h6>
+
+    <!-- Image -->
+    <img src="https://via.placeholder.com/250" alt="Sample Image" width="250">
+
+    <!-- Buttons -->
+    <button onclick="showInternalAlert()">click</button>
+    <button onclick="showExternalAlert()">Click here</button>
+
+    <!-- Internal JS -->
+    <script>
+        let n1 = 10, n2 = 20, n3 = 30, n4 = 40, n5 = 50;
+        let total = n1 + n2 + n3 + n4 + n5;
+        let result = (total - 40) * 30;
+        console.log("Internal JS Result:", result);
+
+        function showInternalAlert() {
+            alert("button clicked");
+        }
+    </script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
